@@ -16,3 +16,6 @@ Examples:
   scoreThrows( [15, 20, 30] )  =>  0
   scoreThrows( [1, 2, 3, 4] )  =>  140
 */
+
+
+// Solution
