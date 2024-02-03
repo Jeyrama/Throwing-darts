@@ -33,3 +33,5 @@ function scoreThrows(radiuses) {
   if (award) {score += 100}
   return score;
 }
+
+// or
