@@ -19,3 +19,17 @@ Examples:
 
 
 // Solution
+
+function scoreThrows(radiuses) {
+  if (radiuses.length <= 0) {return 0}
+
+  let score = 0;
+  let award = true;
+  for (let i = 0; i < radiuses.length; i++) {
+    if (radiuses[i] < 5) {score += 10}
+    else if (radiuses[i] <= 10) {score += 5; award = false}
+    else {award = false}
+  }
+  if (award) {score += 100}
+  return score;
+}
