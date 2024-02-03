@@ -35,3 +35,10 @@ function scoreThrows(radiuses) {
 }
 
 // or
+
+function scoreThrows(a) {
+  let result = a.reduce(function(p,c) {
+    return p + (c < 5 ? 10 : c > 10 ? 0 : 5);
+  },0);
+  return result/a.length===10?result+100:result;
+}
